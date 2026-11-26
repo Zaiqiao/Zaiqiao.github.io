@@ -1,0 +1,150 @@
+/* Mistleaf uses one stylesheet for all three pages. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #faf7ef;
+  color: #232b27;
+  /* Paragraphs, lists, and tables inherit these text styles. */
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, .wordmark, .footer-brand {
+  margin: 0;
+  font-family: Georgia, serif;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3, h4 { font-size: 1.125rem; }
+p { max-width: 65ch; margin: 0.75rem 0 0; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: #254438; text-underline-offset: 0.2em; }
+a:hover { text-decoration-thickness: 0.13em; }
+button { font: inherit; }
+:focus-visible { outline: 3px solid #615947; outline-offset: 3px; }
+
+.container { width: calc(100% - 32px); max-width: 1120px; margin-inline: auto; }
+.site-header { border-bottom: 1px solid #bdcabc; }
+.header-inner, .footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.45rem 1.5rem;
+  padding-block: 0.8rem;
+}
+
+.wordmark { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.45rem; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+.wordmark span { font-size: 0.94rem; }
+.link-list { display: flex; flex-wrap: wrap; gap: 0 1.15rem; list-style: none; padding: 0; margin: 0; }
+.link-list a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+.site-header .link-list a, .site-footer .link-list a { text-decoration: none; }
+.link-list a[aria-current="page"], .site-header .link-list a:hover, .site-footer .link-list a:hover { text-decoration: underline; }
+
+.skip-link { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.6rem; background: #fff; transform: translateY(-200%); z-index: 2; }
+.skip-link:focus { transform: none; }
+
+/* Start with a single column on narrow screens. */
+.hero { display: grid; gap: 1.5rem; align-items: center; padding-block: 2rem 1.5rem; }
+.hero-copy p { max-width: 36ch; }
+.hero-copy .button { margin-top: 1.2rem; }
+.hero-image { width: 100%; height: auto; aspect-ratio: 6 / 5; object-fit: cover; object-position: center; }
+.content-section { margin-block: 1.25rem 2.75rem; }
+.featured-grid, .category-grid, .visit-grid { display: grid; gap: 1rem; }
+.featured-grid, .category-grid { margin-top: 1rem; }
+
+.tea-card {
+  padding: 1.1rem 1rem;
+  border-top: 2px solid #a1b5a4;
+  background: #fff;
+}
+.tea-card p { margin-top: 0.55rem; }
+.tea-category .tea-card + .tea-card { margin-top: 0.55rem; }
+.tea-category > h3 { margin-bottom: 0.65rem; }
+.price { color: #615947; font-weight: 700; white-space: nowrap; }
+.category-links { margin-top: 1rem; }
+.pickup-preview { background: #dae7dd; padding: 1.25rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+
+.button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  background: #254438;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 150ms;
+}
+.button:hover, .button:focus-visible, .button:active { background: #19352b; }
+
+/* IDs are unique destinations for links and the skip link. */
+#pickup, #milk-tea, #fruit-tea, #pure-tea, #compare { scroll-margin-top: 1rem; }
+#pickup:target, .tea-category:target, #compare:target { outline: 2px solid #a1b5a4; outline-offset: 5px; }
+
+.table-frame { margin-top: 0.65rem; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+caption { text-align: left; padding-block: 0.35rem 0.6rem; background: #faf7ef; }
+th, td { text-align: left; padding: 0.65rem; border: 1px solid #bdcabc; overflow-wrap: anywhere; }
+thead { background: #dae7dd; }
+
+.visit-note { border-left: 3px solid #a1b5a4; padding-left: 0.8rem; }
+.pickup-steps { padding-left: 1.4rem; }
+.pickup-steps li { margin-block: 0.65rem; }
+
+.pickup-photo { position: relative; }
+.pickup-photo img { object-fit: contain; background: #eadbc7; }
+.pickup-ticket {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  padding: 0.55rem 0.95rem;
+  background: #faf7ef;
+  color: #232b27;
+  border: 1px solid #615947;
+  text-align: center;
+}
+.pickup-ticket span { display: block; font: 700 1.6rem Georgia, serif; }
+
+.faq-item { border-bottom: 1px solid #bdcabc; padding-block: 0.3rem; }
+.faq-item h3 { margin-block: 0.5rem; }
+.faq-item p { margin: 0 0 0.7rem; }
+.menu-form { margin-top: 1rem; }
+
+.site-footer { padding-block: 0.65rem; background: #254438; color: #fff; font-size: 0.875rem; }
+.site-footer a { color: inherit; font-size: 1rem; }
+.site-footer :focus-visible { outline-color: #fff; }
+.footer-brand { font-size: 1.125rem; }
+.footer-inner p + p { margin-top: 0.35rem; }
+
+/* Let the table text wrap without making the whole page scroll sideways. */
+@media (max-width: 599px) {
+  th, td { padding: 0.35rem; }
+}
+
+/* Add columns as more screen space becomes available. */
+@media (min-width: 600px) {
+  .container { width: calc(100% - 48px); }
+  h1 { font-size: 2.5rem; }
+  .hero { grid-template-columns: 1fr 1fr; gap: 2rem; padding-block: 2.5rem 2rem; }
+  .featured-grid, .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .container { width: calc(100% - 64px); }
+  h1 { font-size: 3rem; }
+  .hero { grid-template-columns: 0.8fr 1.2fr; gap: 3rem; padding-block: 3rem 2.5rem; }
+  .featured-grid, .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .visit-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}
