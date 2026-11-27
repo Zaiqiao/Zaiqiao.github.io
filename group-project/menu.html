@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare Mistleaf's milk tea, fruit tea, and pure tea by taste, price, and ingredients.">
+  <title>Menu | Mistleaf Tea Atelier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <!-- Keep the main and footer links in the same order on every page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html">Mistleaf <span>Tea Atelier</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="link-list">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Tea Menu</h1>
+        <p>Choose a creamy milk tea, a fruity oolong or a cup of freshly brewed pure tea.</p>
+        <nav aria-label="Tea categories">
+          <ul class="link-list category-links">
+            <li><a href="#milk-tea">Milk Tea</a></li>
+            <li><a href="#fruit-tea">Fruit Tea</a></li>
+            <li><a href="#pure-tea">Pure Tea</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img class="hero-image" src="assets/tea-pair.webp" width="1080" height="900" alt="Roasted oolong milk tea alongside peach oolong served over ice">
+    </section>
+
+    <section class="content-section">
+      <h2>Explore the teas</h2>
+      <div class="category-grid">
+        <section class="tea-category" id="milk-tea">
+          <h3>Milk Tea</h3>
+          <article class="tea-card">
+            <h4>Jasmine Milk Tea</h4>
+            <p>Jasmine green tea with a light floral note.</p>
+            <p class="price">18 CNY</p>
+          </article>
+          <article class="tea-card">
+            <h4>Roasted Oolong Milk Tea</h4>
+            <p>Roasted oolong with a toasted finish.</p>
+            <p class="price">20 CNY</p>
+          </article>
+        </section>
+        <section class="tea-category" id="fruit-tea">
+          <h3>Fruit Tea</h3>
+          <article class="tea-card">
+            <h4>Peach Oolong</h4>
+            <p>Oolong with peach, fruity and served over ice.</p>
+            <p class="price">22 CNY</p>
+          </article>
+        </section>
+        <section class="tea-category" id="pure-tea">
+          <h3>Pure Tea</h3>
+          <article class="tea-card">
+            <h4>Pure Jasmine Tea</h4>
+            <p>Freshly brewed jasmine green tea with a floral finish.</p>
+            <p class="price">15 CNY</p>
+          </article>
+        </section>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 id="compare">Compare drinks</h2>
+      <!-- Scope associates each value with the drink and column header. -->
+      <div class="table-frame">
+        <table>
+          <caption>Tea bases, prices and ingredients</caption>
+          <thead>
+            <tr><th scope="col">Drink</th><th scope="col">Tea base and taste</th><th scope="col">Price (CNY)</th><th scope="col">Ingredient note</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Jasmine Milk Tea</th><td>Jasmine green tea, light floral</td><td class="price">18</td><td>Contains milk</td></tr>
+            <tr><th scope="row">Roasted Oolong Milk Tea</th><td>Roasted oolong, toasted</td><td class="price">20</td><td>Contains milk</td></tr>
+            <tr><th scope="row">Peach Oolong</th><td>Oolong with peach, fruity</td><td class="price">22</td><td>Contains peach</td></tr>
+            <tr><th scope="row">Pure Jasmine Tea</th><td>Jasmine green tea, floral</td><td class="price">15</td><td>Brewed tea</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section pickup-preview">
+      <div>
+        <h2>Make it yours</h2>
+        <ul>
+          <li><strong>Sweetness:</strong> zero, half or regular</li>
+          <li><strong>Ice:</strong> no ice, light ice or regular ice</li>
+        </ul>
+        <p>Ask staff about ingredients and cross-contact before ordering.</p>
+      </div>
+      <a class="button" href="visit.html#pickup">How Pickup Works</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Mistleaf Tea Atelier</p>
+        <p>Fictional Chengdu tea shop · Course project</p>
+        <p>ChatGPT helped draft the site copy, HTML and CSS.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="link-list">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find out how to select, customise, and pick up your tea at the Mistleaf counter.">
+  <title>Visit | Mistleaf Tea Atelier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <!-- Keep the main and footer links in the same order on every page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="index.html">Mistleaf <span>Tea Atelier</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="link-list">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="visit.html" aria-current="page">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Visit Mistleaf</h1>
+        <p>Chengdu, China</p>
+        <p class="visit-note">This fictional shop illustrates how an in-store pickup could work.</p>
+      </div>
+      <div class="pickup-photo">
+        <img class="hero-image" src="assets/pickup-drink.webp" width="520" height="780" alt="A glass of roasted oolong milk tea">
+        <div class="pickup-ticket" aria-hidden="true">Pickup<span>027</span></div>
+      </div>
+    </section>
+
+    <div class="visit-grid content-section">
+      <section id="pickup">
+        <h2>How pickup works</h2>
+        <ol class="pickup-steps">
+          <li>Choose a drink from the menu.</li>
+          <li>Tell staff the drink, sweetness and ice you want.</li>
+          <li>Collect it at the counter when staff calls your number.</li>
+        </ol>
+        <!-- A native GET form opens the menu using the browser alone. -->
+        <form class="menu-form" action="menu.html" method="get">
+          <button class="button" type="submit">Back to menu</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="questions">
+        <h2 id="questions">Pickup questions</h2>
+        <article class="faq-item">
+          <h3>Can I order online?</h3>
+          <p>This site helps you choose your drink. Tell staff your selection in person.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Can I change sweetness or ice?</h3>
+          <p>Yes. Tell staff your preference when placing the order.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Where can I check ingredients?</h3>
+          <p>See the <a href="menu.html#compare">menu ingredient notes</a> and ask staff about cross-contact.</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Mistleaf Tea Atelier</p>
+        <p>Fictional Chengdu tea shop · Course project</p>
+        <p>ChatGPT helped draft the site copy, HTML and CSS.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="link-list">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="visit.html" aria-current="page">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
