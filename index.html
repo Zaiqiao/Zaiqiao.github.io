@@ -3,78 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Browse freshly brewed teas and milk teas at Mistleaf Tea Atelier, a fictional shop in Chengdu.">
-  <title>Home | Mistleaf Tea Atelier</title>
+  <meta name="description" content="Meet Peter Parker and Miles Morales, and find your starting point in Spider-Man films and games.">
+  <title>Spider-Man | A Fan Guide</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <!-- Keep the main and footer links in the same order on every page. -->
+  <!-- The header and footer use the same three links on every page. -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="wordmark" href="index.html">Mistleaf <span>Tea Atelier</span></a>
+    <div class="container header-row">
+      <a class="brand" href="index.html">Spider-Man <span>Fan Guide</span></a>
       <nav aria-label="Main navigation">
-        <ul class="link-list">
+        <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="visit.html">Visit</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="games.html">Games</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <main class="container" id="main-content" tabindex="-1">
-    <section class="hero">
-      <div class="hero-copy">
-        <h1>Freshly brewed<br> tea in Chengdu.</h1>
-        <p>Compare brewed teas, choose your sweetness and ice, and see how counter pickup works.</p>
-        <a class="button" href="menu.html">View Menu</a>
-      </div>
-      <img class="hero-image" src="assets/milk-tea-cup.webp" width="1080" height="900" alt="Iced milk tea in a clear glass beside loose tea leaves">
-    </section>
-
-    <section class="content-section" aria-labelledby="featured">
-      <h2 id="featured">Start with these teas</h2>
-      <div class="featured-grid">
-        <article class="tea-card">
-          <h3><a href="menu.html#milk-tea">Jasmine Milk Tea</a></h3>
-          <p>Jasmine green tea with a light floral note.</p>
-          <p class="price">18 CNY</p>
-        </article>
-        <article class="tea-card">
-          <h3><a href="menu.html#milk-tea">Roasted Oolong Milk Tea</a></h3>
-          <p>Roasted oolong with a toasted finish.</p>
-          <p class="price">20 CNY</p>
-        </article>
-        <article class="tea-card">
-          <h3><a href="menu.html#fruit-tea">Peach Oolong</a></h3>
-          <p>Oolong with peach, fruity and served over ice.</p>
-          <p class="price">22 CNY</p>
-        </article>
+  <main id="main-content" tabindex="-1">
+    <section class="cover" aria-labelledby="cover-title">
+      <!-- Desktop pointer zones shift the same image. Links work by touch and keyboard too. -->
+      <div class="gaze-zone gaze-left" aria-hidden="true"></div>
+      <div class="gaze-zone gaze-middle" aria-hidden="true"></div>
+      <div class="gaze-zone gaze-right" aria-hidden="true"></div>
+      <img class="cover-art" src="assets/spider-man-cover.jpg" width="1920" height="1095" alt="Peter Parker and Miles Morales swing side by side above New York">
+      <div class="container cover-content">
+        <div class="cover-intro">
+          <h1 id="cover-title">Spider-Man</h1>
+          <p>Meet the heroes behind the mask. Explore their stories on screen and in games.</p>
+        </div>
+        <nav class="cover-links" aria-label="Explore Spider-Man">
+          <a href="#spider-people"><strong>Characters</strong><span>Peter Parker and Miles Morales</span></a>
+          <a href="films.html"><strong>Films</strong><span>From live action to the Spider-Verse</span></a>
+          <a href="games.html"><strong>Games</strong><span>Insomniac’s Spider-Man series</span></a>
+        </nav>
       </div>
     </section>
-
-    <section class="pickup-preview content-section">
-      <div>
-        <h2>Picking up your tea</h2>
-        <p>Choose your drink, tell staff your preferences, then collect it at the counter.</p>
+    <div class="container">
+    <section class="section" id="spider-people">
+      <h2>Two heroes under the mask</h2>
+      <div class="columns">
+        <article>
+          <h3>Peter Parker</h3>
+          <p>A spider bite gives Peter extraordinary powers. His talent for science helps him turn those powers into a way to protect New York, even when helping others complicates his own life.</p>
+          <p><a href="https://www.marvel.com/characters/spider-man-peter-parker/">Peter Parker on Marvel</a></p>
+        </article>
+        <article>
+          <h3>Miles Morales</h3>
+          <p>Miles learns what the name Spider-Man means to him. In many stories he can camouflage himself and deliver a bio-electric shock, giving him his own ways of helping the city.</p>
+          <p><a href="https://www.marvel.com/characters/spider-man-miles-morales/in-comics">Miles Morales on Marvel</a></p>
+        </article>
       </div>
-      <a class="button" href="visit.html">Plan Your Visit</a>
+      <img class="character-still" src="assets/far-from-home-still.jpg" width="2484" height="1040" alt="Tom Holland as Peter Parker crouches on a rooftop above a canal in Venice">
     </section>
+    </div>
   </main>
-
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container header-row">
       <div>
-        <p class="footer-brand">Mistleaf Tea Atelier</p>
-        <p>Fictional Chengdu tea shop · Course project</p>
-        <p>ChatGPT helped draft the site copy, HTML and CSS.</p>
+        <p><strong>Spider-Man Fan Guide</strong></p>
+        <p>An unofficial course project. ChatGPT assisted with the text and code.</p>
+        <p>Image sources <a href="https://www.playstation.com/en-us/games/marvels-spider-man-2/">PlayStation</a> and <a href="https://sites.sonypictures.com/spidermanfarfromhome/site/gallery/">Sony Pictures</a>.</p>
       </div>
       <nav aria-label="Footer navigation">
-        <ul class="link-list">
+        <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="visit.html">Visit</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="games.html">Games</a></li>
         </ul>
       </nav>
     </div>
